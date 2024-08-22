@@ -1,0 +1,340 @@
+:root{
+    --primary-color:#4caf50;
+    --secondary-color:#fff;
+    --background-color:#f4f4f4;
+    --Card-backgroung-color:#fff;
+    --Card-shadow:rgba(0,0,0,0.2);
+    --padding:0.5rem;
+    --margin:0.5rem;
+}
+
+
+
+/*basic css starts*/
+body{
+    background-color: #f4f4f4;
+    font-family:Roboto, sans-serif;
+    color:#333;
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 62.5%;
+}
+
+ul{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+}
+/*basic css ends*/
+
+/*navigation starts*/
+header{
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    text-align:center;
+    padding:1.1rem 0;
+    height:8rem;
+    width:100%;
+    position:sticky;
+    top:0;
+    left:0;  
+}
+
+nav ul{
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+   
+}
+
+nav ul li{
+    margin:0.8rem;
+    padding:3rem;
+    
+}
+
+nav ul li a{
+    color:var(--secondary-color);
+    text-decoration:none;
+    font-weight:bold;
+    font-size:1.8rem;
+   
+}
+/*navigation end*/
+
+/*main section starts*/
+main{
+    width:80%;
+   margin:auto;
+   padding: 1.2rem;
+   
+}
+
+/*intro section start*/
+.intro{
+    height:85vh;
+    background-image: url('images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg');
+    background-position: center ;
+    background-repeat: none;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.intro__title{
+    color:white;
+    font-size:2.4rem;
+}
+
+.intro__description{
+    color:white;
+    font-size: 1.8rem;
+}
+/*intro section end*/
+
+/*about me section starts*/
+.About{
+    margin-top:2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Card-title{
+    color:black;
+    font-size: 1.8rem;
+}
+
+.card__description1{
+    color:black;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.card__description2{
+    color:black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+/*about me section ends*/
+
+/*contact me section starts*/
+#Contact{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:auto;
+    margin-bottom:2rem;
+    width: 50%;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.Contact-title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+legend{
+    font-size:1.5rem;
+    font-weight: bold;
+}
+.form{
+    padding:17rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    
+}
+
+.form-input{
+    width:30rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button{
+    background-color: white;
+    color:black;
+    padding: 0.8rem 1.6rem;
+    margin-right: 1rem;
+    border-radius:0.8rem;
+    cursor:pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color:#45a049;
+}
+     
+input{
+     padding:0rem;
+     margin:0rem;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:0.8rem;
+    margin:0.5rem 0;
+    border-radius:0.5rem;
+    box-sizing:border-box;
+}
+/*contact me section end*/  
+
+.About{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow:border-box;
+    border: 2px solid rgb(170, 163, 163);       
+}
+/*main section end*/
+
+
+/*footer section start*/
+#social-media{
+    background-color:black;
+    height:5rem;
+    padding:0 0 0 0;
+    width:80%;
+    margin: 0rem;
+    font-weight: bold;
+}
+
+.social-media h3, p, a{
+    color:white;
+    font-size: 1.6rem;
+}
+
+.icon ul{
+    padding:0rem;
+    line-height:3rem;
+}
+/*footer section end*/
+
+
+/*responsive starts here*/
+@media screen and (max-width: 1200px){
+
+ #Contact{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    margin-bottom:2rem;
+    margin-bottom: 2rem;
+    width: 80%; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+}
+
+.form{
+    padding:10rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    
+}
+
+#social-media{
+    background-color: var(--primary-color);
+    height:60vh;
+    width: 100%;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content:center;
+    align-items: center; 
+}
+
+.icon h3{
+    text-align: center;
+    font-size: 2rem;
+    color:white;
+    margin:0;
+}
+@media screen and (max-width: 900px){
+
+    .intro{
+        height:30vh;
+        background-image: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .intro__title{
+        color:black;
+    }
+
+    .intro__description{
+        color:black;
+    }
+
+    .img_about{
+        width:30rem;
+    }
+
+    .card__description1{
+        font-size:1.4rem;
+    }
+
+    .card__description2{
+        font-size:1.4rem;
+    }
+
+    .form{
+        padding:0;
+    }
+
+    .form_data{
+        width:50%;    
+    }
+
+    #Contact{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        margin-bottom:2rem;
+        margin-bottom: 2rem;
+        width: 80%;  
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    }
+
+    #social-media{
+        background-color: var(--primary-color);
+        height:50vh;
+        width: 100%;
+        font-weight: bold;
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items: center; 
+    }
+
+    .icon h3{
+        text-align: center;
+        font-size: 2rem;
+        color:white;
+        margin:0;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 600px){
+
+}
+/*responsive ends here*/
